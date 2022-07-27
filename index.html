@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Back End Assessment</title>
+  </head>
+
+  <!--container-->
+  <body class="container">
+    <!--FORTUNE BUTTON -->
+    <div>
+      <button class="fortuneButton" id="fortuneButton" type="submit">
+        GET YOUR FORTUNE HERE
+      </button>
+
+      <!--GOAL ADVICE DROP DOWN-->
+      <label for="goal-category"> Select a category for Goal Advice </label>
+
+      <select name="" id="goal-category">
+        <option value="spirituality">Spirituality</option>
+        <option value="finance">Finance</option>
+        <option value="horoscope">Horoscope</option>
+      </select>
+
+      <button id="goal-submit">Get Advice</button>
+      <section id="display-section"></section>
+    </div>
+
+    <br />
+
+    <!--SUBSCRIPTION BUTTON-->
+    <section>
+      <form>
+        <div class="container">
+          <h2>Subscribe to our Newsletter</h2>
+          <p>
+            Get Our Bi-monthly Fortune Newsletter to keep with the Moon and the
+            Stars.
+          </p>
+        </div>
+
+        <!--UNSUBSCRIBE BUTTON-->
+        <button class="Unsubscribe from Emails" id="unsubscribe" type="submit">
+          Unsubscribe from newsletter
+        </button>
+
+
+
+        <!--INTERNAL STYLING-->
+        <div class="container" style="background-color: white">
+          <input type="text" placeholder="Name" name="name" required />
+          <input type="text" placeholder="Email address" name="mail" required />
+          <label>
+            <input type="checkbox" checked="checked" name="subscribe" />
+            Bi-Monthly Newsletter
+          </label>
+        </div>
+
+        <div class="subscribeBtn" id="getSubmit">
+          <input type="submit" value="Subscribe" />
+        </div>
+      </form>
+    <section id="display-list"></section>
+    </section>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
